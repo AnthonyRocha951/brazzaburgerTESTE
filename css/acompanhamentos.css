@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rubik+Glitch&display=swap");
+
+:root {
+  --cor0: #FEAD2B;
+
+  --font-padrao: "Arial";
+  --font-logo: "Rubik Glitch";
+  --font-destaque: "Bebas Neue";
+}
+
+* {
+    margin: 0;
+    padding: 0
+  }
+
+  
+  
+  body {
+    background-color: #FEAD2B;
+  }
+  
+  header {
+    padding: 32px 0;
+    text-align: center;
+    }
+  
+  header, section {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  header h1 {
+    font-family: var(--font-destaque);
+    margin-bottom: 4px;
+  }
+  
+  header h1 span {
+    color: black;
+  }
+  
+  section {
+    margin-bottom: 24px;
+  }
+  
+  h2 {
+    background-color: #fed7aa;
+    text-align: center;
+    padding: 8px 16px;
+    margin-bottom: 24px;
+    font-size: 18px;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  ul li {
+    margin-bottom: 16px;
+    display: flex;
+  }
+  
+  li .details {
+    max-width: 240px;
+  }
+  
+  .details {
+    margin-bottom: 8px;
+  }
+  
+  .details p {
+    color: #000000 60%;
+    font-size: 14px;
+    line-height: 23px;
+  }
+  
+  /* FONTES */
+  
+  h1, h2, h3, .preco {
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
+  p {
+    font-family: var(--font-destaque);
+  }
+  
+  h1 {
+    font-size: 60px;
+  }
+
+  h2 {
+    color: black;
+  }
+  
+  h3 {
+    font-size: 20px;
+  }
+
+  footer img {
+    margin: auto;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 5px;
+  }
+
+  footer p {
+    text-align: center;
+    margin-bottom: 30px;
+  }

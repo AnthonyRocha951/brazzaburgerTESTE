@@ -1,0 +1,344 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rubik+Glitch&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --cor0: #FEAD2B;
+
+  --font-padrao: "Arial";
+  --font-logo: "Rubik Glitch";
+  --font-destaque: "Bebas Neue";
+}
+
+body {
+  background-color: var(--cor0);
+}
+
+header {
+  font-family: var(--font-padrao);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: white;
+  background-color: black;
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
+  align-items: center;
+  padding: 5px 50px;
+  box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.685);
+  margin-bottom: 50px;
+}
+
+header img {
+  width: 100px;
+  height: 100px;
+}
+
+header h1 {
+  font-family: var(--font-destaque);
+  font-weight: normal;
+  font-size: 60px;
+  cursor: default;
+}
+
+header nav a {
+  padding: 5px 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+  font-size: 15px;
+  transition: 0.5s;
+}
+
+header nav a:hover {
+  background-color: rgba(255, 255, 255, 0.233);
+  border-radius: 0px 10px 0px 10px;
+  cursor: pointer;
+  font-size: 18px;
+  transform: scale(1);
+}
+
+.h1-principal {
+  padding: 10px;
+  width: 400px;
+  background-color: rgba(0, 0, 0, 0.61);
+  border-radius: 0px 10px 0px 10px;
+  margin: auto;
+  color: white;
+  font-family: var(--font-destaque);
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 100px;
+}
+
+.conteudo h1:hover {
+  font-size: 4.5em;
+  transform: scale(1);
+  cursor: default;
+}
+
+.conteudo p:hover {
+  font-size: 22px;
+  transform: scale(1);
+  cursor: default;
+}
+
+.h1-conteudo {
+  font-family: var(--font-destaque);
+  color: white;
+  font-weight: normal;
+  font-size: 4em;
+  transition: 0.5s ease-in-out;
+  overflow: hidden;
+}
+
+.img-conteudo {
+  width: 340px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.63);
+  transition: 0.4s ease-in-out;
+  overflow: hidden;
+}
+
+.img-conteudo:hover {
+  width: 370px;
+  transform: scale(1);
+}
+
+.section2 {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 100px;
+}
+
+.section3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 100px;
+}
+
+.section4 {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 100px;
+}
+
+footer {
+  background-color: black;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  font-family: var(--font-destaque);
+  font-size: 18px;
+  transition: 0.5s;
+}
+
+footer a:hover {
+  color: white;
+  font-size: 19px;
+  transform: scale(1);
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer section {
+  text-align: center;
+  padding: 50px;
+}
+
+/* botao */
+
+button a {
+  color: white;
+  text-decoration: none;
+}
+
+button {
+  outline: none;
+  cursor: pointer;
+  border: none;
+  padding: 10px 20px;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  position: relative;
+  display: inline-block;
+  letter-spacing: 0.05rem;
+  font-weight: 700;
+  font-size: 17px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #FEAD2B;
+  color: ghostwhite;
+}
+
+button span {
+  font-weight: normal;
+  font-family: var(--font-destaque);
+  position: relative;
+  z-index: 10;
+  transition: color 0.4s;
+}
+
+button:hover span {
+  color: rgb(255, 255, 255);
+}
+
+button::before,
+button::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+button::before {
+  content: "";
+  background: black;
+  width: 120%;
+  left: -10%;
+  transform: skew(30deg);
+  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+button:hover::before {
+  transform: translate3d(100%, 0, 0);
+}
+/* botao */
+
+@media (max-width: 900px) {
+
+  header {
+    font-family: var(--font-padrao);
+    display: block;
+    flex-wrap: wrap;
+    color: white;
+    background-color: black;
+    align-items: center;
+    padding: 15px 5px;
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.685);
+    margin-bottom: 50px;
+  }
+
+  header img {
+    margin: auto;
+    display: block;
+    width: 50px;
+    height: 50px;
+  }
+
+  header h1 {
+    font-family: var(--font-destaque);
+    font-weight: normal;
+    font-size: 60px;
+    text-align: center;
+    padding: 0px 20px 20px 20px;
+  }
+
+  .h1-principal {
+    font-size: 25px;
+    padding: 10px;
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.61);
+    border-radius: 0px 10px 0px 10px;
+    margin: auto;
+    color: white;
+    font-family: var(--font-destaque);
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .section1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 100px;
+  }
+
+  .section2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 100px;
+  }
+
+  .section3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 100px;
+  }
+
+  .section4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 100px;
+  }
+
+  .h1-conteudo {
+    font-family: var(--font-destaque);
+    color: white;
+    text-align: center;
+    font-weight: normal;
+    font-size: 50px;
+  }
+
+  .conteudo h1:hover {
+    font-size: 45px;
+    transform: scale(1);
+    cursor: default;
+  }
+
+  .conteudo p:hover {
+    font-size: 16px;
+    transform: scale(1);
+    cursor: default;
+  }
+
+  button {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  .img-conteudo {
+    width: 250px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.63);
+    transition: 0.4s ease-in-out;
+  }
+
+  .img-conteudo:hover {
+    width: 300px;
+    transform: scale(1);
+  }
+}
