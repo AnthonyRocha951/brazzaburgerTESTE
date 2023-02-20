@@ -43,7 +43,7 @@
   }
   
   h2 {
-    background-color: #fed7aa;
+    background-color: #dddddd9a;
     text-align: center;
     padding: 8px 16px;
     margin-bottom: 24px;
@@ -78,12 +78,18 @@
   
   /* FONTES */
   
-  h1, h2, h3, .preco {
+  h1, h2, h3 {
+    font-family: var(--font-padrao);
+    color: #ffffff;
+  }
+
+  .preco {
+    font-family: var(--font-padrao);
     color: #ffffff;
   }
 
   p {
-    font-family: var(--font-destaque);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
   
   h1 {
@@ -95,6 +101,7 @@
   }
   
   h3 {
+    font-family: var(--font-padrao);
     font-size: 20px;
   }
 
