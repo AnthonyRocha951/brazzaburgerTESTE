@@ -105,6 +105,11 @@
     font-size: 20px;
   }
 
+  strong div {
+    position: relative;
+    left: 100px;
+  }
+
   footer img {
     margin: auto;
     display: block;
