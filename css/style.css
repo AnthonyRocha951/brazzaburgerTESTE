@@ -14,7 +14,7 @@
 }
 
 body {
-  background-color: var(--cor0);
+  background-image: linear-gradient(to right,  #FEAD2B, #fecd2b, #fee92b );
 }
 
 header {
