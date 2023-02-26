@@ -14,7 +14,7 @@
 }
 
 body {
-  background-image: linear-gradient(to right,  #FEAD2B, #fecd2b, #fee92b );
+  background-image: linear-gradient(to left,  #FEAD2B, #fecd2b, #fee92b );
 }
 
 header {
